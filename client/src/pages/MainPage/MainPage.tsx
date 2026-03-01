@@ -21,7 +21,6 @@ const MainPage = () => {
   const [aiResponse, setAiResponse] = useState(null);
   const [error, setError] = useState("");
 
-
   const handleSearch = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
@@ -52,7 +51,9 @@ const MainPage = () => {
           <Col lg={8} className="mx-auto">
             <h1 className=" lead text-secondary display-4 fw-bold mb-3">
               Погрузись в мир рока
+             
             </h1>
+
             <p className="lead text-secondary">
               Узнай историю культовых групп, смысл легендарных песен и
               интересные факты
@@ -145,7 +146,13 @@ const MainPage = () => {
 
                   {/* Кнопки действий */}
                   <div className="gap-2">
-                    <Button onClick={() => window.open("https://maximum.ru/", "_blank")} variant="outline-info"  size="sm">
+                    <Button
+                      onClick={() =>
+                        window.open("https://maximum.ru/", "_blank")
+                      }
+                      variant="outline-info"
+                      size="sm"
+                    >
                       Или просто послушать 🤟MAXIMUM🤟
                     </Button>
                   </div>
