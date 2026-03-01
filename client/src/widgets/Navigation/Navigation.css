@@ -3,3 +3,31 @@
   font-weight: bold;
   color: white;
 }
+.my_logo {
+  font-size: 20px;
+  font-family: 'Metal', 'Arial Black', sans-serif;
+  color: #ffaa00;
+  text-shadow: 
+    0 0 20px #ff5500,
+    0 0 30px #ff3300,
+    0 0 40px #ff0000,
+    0 0 50px #cc0000;
+  animation: minimalFire 2.5s infinite alternate;
+}
+
+@keyframes minimalFire {
+  0% {
+    text-shadow: 
+      0 0 15px #ffaa00,
+      0 0 30px #ff6600,
+      0 0 45px #ff3300,
+      0 0 60px #ff0000;
+  }
+  100% {
+    text-shadow: 
+      0 0 25px #ffbb00,
+      0 0 50px #ff7700,
+      0 0 75px #ff4400,
+      0 0 100px #ff2200;
+  }
+}

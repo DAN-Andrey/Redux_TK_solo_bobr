@@ -1,0 +1,19 @@
+.time-display {
+    color: #fff;
+    animation: fadeIn 0.4s ease-out;
+    
+}
+
+.blinking-colon {
+    animation: blink 1s infinite;
+    margin: 0 5px;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}

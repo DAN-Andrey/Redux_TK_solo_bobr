@@ -37,7 +37,7 @@ export const refreshThunk = createAsyncThunk<
 
     // if (response.data.statusCode === 200 && response.data.data?.user) {
       setAccessToken(response.data.data?.accessToken || "");
-      return response.data.data.data || null;
+      return response.data.data?.user || null;
     // }
     return rejectWithValue("Ошибка при обновлении токенов");
   } catch (error) {
