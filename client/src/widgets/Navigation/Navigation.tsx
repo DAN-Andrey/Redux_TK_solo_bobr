@@ -9,7 +9,7 @@ import {
   useAppSelector,
 } from "../../shared/hoocs/useReduxHooks/useReduxHooks";
 import { signOutThunk } from "../../entities/user/api/UserApi";
-
+import Time from "../Time/Time";
 
 export default function Navigation() {
   const Navigate = useNavigate();
@@ -31,10 +31,13 @@ export default function Navigation() {
   return (
     <Navbar bg="secondary" data-bs-theme="dark">
       <Container>
-        <span className="fs-3 me-2">🎸</span>
-        <span className="fw-bold">Rock Storyteller</span>
-        <br />
-
+        <span className="fs-3 me-1 " style={{ color: "white" }}>
+          <Time />
+        </span>
+        <NavLink to="/" className="nav-link">
+          <span className="fs-3 me-2">🎸</span>
+          <span className="my_logo">Rock Storyteller</span>
+        </NavLink>
         <Nav className="me-auto">
           <NavLink to="/" className="nav-link">
             Главная
